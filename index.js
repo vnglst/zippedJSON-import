@@ -14,7 +14,7 @@ var mongoCollection = process.argv[3];
 var SaveToMongo = require('save-to-mongo');
 
 var saveToMongo = SaveToMongo({
-	uri: 'mongodb://127.0.0.1:27017/glossai-01',
+	uri: 'mongodb://127.0.0.1:27017/termworld',
 	collection: mongoCollection,
 	bulk: {
 		mode: 'unordered'
