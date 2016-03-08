@@ -4,17 +4,18 @@ var fs = require('fs');
 var path = require('path');
 var inputZipFile = process.argv[2];
 var mongoCollection = process.argv[3];
+var mongodbName = process.argv[4] || 'test'; // default database name = test;
 
 // Example usage:
 //
-// node index.js IATE-nl.json.zip termentries
+// node index.js IATE-nl.json.zip termentries term-search
 //
 
 // init stream
 var SaveToMongo = require('save-to-mongo');
 
 var saveToMongo = SaveToMongo({
-	uri: 'mongodb://127.0.0.1:27017/termworld',
+	uri: 'mongodb://127.0.0.1:27017/'+mongodbName,
 	collection: mongoCollection,
 	bulk: {
 		mode: 'unordered'

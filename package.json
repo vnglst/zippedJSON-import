@@ -1,13 +1,13 @@
 {
-  "name": "zip2json2mongo",
+  "name": "zippedJSON2mongo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Imports zipped JSON into a MongoDB collection",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Koen van Gilst",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "JSONStream": "^0.10.0",
     "save-to-mongo": "0.0.2",
