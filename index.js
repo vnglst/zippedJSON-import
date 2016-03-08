@@ -1,3 +1,10 @@
+//
+// DEPRECATED
+// USE JSON2MONGO INSTEAD -->
+// npm install -g json2mongo
+//
+//
+
 var unzip = require('unzip');
 var JSONStream = require('JSONStream');
 var fs = require('fs');
